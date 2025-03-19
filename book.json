@@ -1,0 +1,54 @@
+{
+  "title": "Book Template Guide",
+  "subtitle": "Create and Publish Professional Books with Automated Workflows",
+  "author": "Open Source Community",
+  "publisher": "Book Template Project",
+  "languages": ["en"],
+  "defaultLanguage": "en",
+  "version": "0.1.0",
+  "copyright": "© 2025 Book Template Contributors",
+  "license": "MIT",
+  "outputFormats": ["pdf", "epub", "html", "mobi"],
+  "theme": "default",
+  "coverImage": "book/en/images/cover.png",
+  "metadata": {
+    "keywords": ["publishing", "books", "automation", "pandoc", "markdown"],
+    "description": "A comprehensive guide to using the Book Template system for creating and publishing professional books",
+    "isbn": "",
+    "language": "en-US"
+  },
+  "build": {
+    "toc": true,
+    "tocDepth": 3,
+    "numberSections": true,
+    "fontSizeAdjustment": 0,
+    "lineHeightAdjustment": 1.2,
+    "pageSize": "A4",
+    "marginTop": "1in",
+    "marginRight": "1in",
+    "marginBottom": "1in",
+    "marginLeft": "1in"
+  },
+  "html": {
+    "template": "templates/html.template",
+    "css": "templates/styles.css",
+    "includeInHeader": "",
+    "includeInFooter": ""
+  },
+  "pdf": {
+    "template": "templates/template.tex",
+    "fontMain": "Linux Libertine O",
+    "fontSans": "Linux Biolinum O",
+    "fontMono": "Inconsolata",
+    "fontCJK": "",
+    "colorLinks": true,
+    "linkColor": "blue",
+    "urlColor": "red"
+  },
+  "epub": {
+    "template": "templates/epub.template",
+    "css": "templates/epub.css",
+    "coverImage": "book/en/images/cover.png",
+    "chapter-level": 1
+  }
+}
